@@ -1,0 +1,13 @@
+db:
+  mysql:
+    host: localhost
+
+logger:
+    error:
+        path: /var/log/official-site/error/error.log
+        maxFiles: 15
+        maxSize: 104857600
+    combined:
+        path: /var/log/official-site/combined.log
+        maxFiles: 30
+        maxSize: 10485760

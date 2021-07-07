@@ -1,0 +1,30 @@
+# 服务
+server:
+  port: 3201
+
+# 数据库
+db:
+  mysql:
+    type: 'mysql'
+    host: 'localhost'
+    port: 3336
+    username: 'root'
+    password: 'root123'
+    database: 'official_website'
+#日志
+logger:
+  error:
+    path: /ow/log/error/error.log
+    maxFiles: 15
+    maxSize: 104857600
+  combined:
+    path: /ow/log/combined.log
+    maxFiles: 30
+    maxSize: 10485760
+
+jwt:
+  secret: 'qwueroiasdas'
+  expiresIn: '1h'
+  privetePath: './src/config/ssl/privateKey.pem'
+  publicPath: './src/config/ssl/publicKey.pem'
+  passphrase: 'guangdian'
